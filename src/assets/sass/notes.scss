@@ -1,0 +1,62 @@
+.notes-main {
+  width: calc(100% - 40px);
+  height: 100%;
+  margin: 0 20px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .directory {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 250px;
+    height: 100%;
+    padding: 4px 25px;
+    border-radius: 20px;
+    color: #fff;
+    @include notes-dir;
+    text-align: center;
+    
+    .dir-title {
+      display: flex;
+      width: 100%;
+      height: 50px;
+      padding: 5px;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 16px;
+      letter-spacing: 3px;
+      color: rgba(149, 156, 109, 0.856);
+
+      span {
+        cursor: pointer;
+      }
+      
+    }
+
+    .dir-con {
+      width: 100%;
+      height: calc(100% - 50px);
+      .con-day {
+        li {
+          cursor: pointer;
+          transition: background-color 500ms;
+  
+          &:hover {
+            background-color: rgba(111, 134, 95, 0.521);
+          }
+        }
+      }
+      
+    }
+  }
+
+  .content {
+    width: calc(100% - 300px);
+    height: 100%;
+    padding: 4px  10px;
+    border-radius: 20px;
+    @include notes-dir;
+  }
+}

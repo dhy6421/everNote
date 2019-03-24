@@ -1,0 +1,28 @@
+@mixin bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+$root_url: '../imgs/';
+
+@mixin main-bg {
+  @include bg;
+  background-image: url('#{$root_url}main-bg.jpg');
+}
+
+@mixin logo-icon {
+  @include icon;
+  background-image: url('#{$root_url}img2.png');
+}
+
+@mixin notes-dir {
+  @include bg;
+  background-image: url('#{$root_url}main-bg.jpg');
+}
+

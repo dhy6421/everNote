@@ -1,0 +1,23 @@
+@import '_base.scss';
+@import '_plugin.scss';
+@import 'header.scss';
+@import 'home.scss';
+@import 'notes.scss';
+
+.main {
+  width: 100%;
+  height: 100%;
+  @include main-bg;
+  padding: 10px;
+
+  .main-mian {
+    width: 100%;
+    height: 100%;
+
+    .main-body {
+      width: 100%;
+      height: calc(100% - 60px);
+    }
+  }
+  
+}

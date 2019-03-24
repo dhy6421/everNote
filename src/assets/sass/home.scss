@@ -1,0 +1,26 @@
+.home-main {
+  width: 100%;
+  height: 100%;
+  .imgs {
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .img-box {
+      width: 100px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, .3);
+      padding: 5px;
+      img {
+        max-width: calc(100% - 10px);
+        max-height: calc(100% - 10px);
+      }
+    }
+  }
+}
