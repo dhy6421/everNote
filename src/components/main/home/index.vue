@@ -2,7 +2,7 @@
   <div class="home-main">
     <div class="imgs">
       <div class="img-box">
-        <img src="../../../assets/imgs/img2.png" alt="">
+        <img src="../../../assets/imgs/img1.png" alt="">
       </div>
       <div class="img-box">
         <img src="../../../assets/imgs/img2.png" alt="">
@@ -23,7 +23,11 @@
 export default {
   name: "home",
   data() {
-    return {};
+    return {
+    };
+  },
+  computed: {
+    
   }
 };
 </script>

@@ -18,7 +18,7 @@ $root_url: '../imgs/';
 
 @mixin logo-icon {
   @include icon;
-  background-image: url('#{$root_url}img2.png');
+  background-image: url('#{$root_url}img5.png');
 }
 
 @mixin notes-dir {
